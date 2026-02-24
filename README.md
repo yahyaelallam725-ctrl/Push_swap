@@ -137,9 +137,6 @@ push_swap/
 │   └── utils/
 │       ├── stack_utils.c
 │       └── helpers.c
-└── bonus/
-    └── checker.c
-```
 
 ## Technical Choices
 
