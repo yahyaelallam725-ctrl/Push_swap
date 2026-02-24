@@ -166,6 +166,7 @@ typedef struct s_stack
 - [Big O Notation Explained](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
 - [Push_swap Visualizer](https://github.com/o-reo/push_swap_visualizer)
 - [Turkish Algorithm (Push_swap Strategy)](https://medium.com/@ayogun/push-swap-c1f5d2d41e97)
+-my own resource : https://miro.com/app/board/uXjVGHH9prQ=/
 
 ### C Programming & Linked Lists
 - [Linked Lists in C](https://www.learn-c.org/en/Linked_lists)
