@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*																			*/
 /*														:::	  ::::::::   */
-/*   ft_lstadd_front.c								  :+:	  :+:	:+:   */
+/*   ft_check_dup.c                                     :+:      :+:    :+:   */
 /*													+:+ +:+		 +:+	 */
 /*   By: yelallam <marvin@42.fr>					+#+  +:+	   +#+		*/
 /*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2026/02/17 13:22:34 by yelallam		  #+#	#+#			 */
-/*   Updated: 2026/02/17 13:22:38 by yelallam		 ###   ########.fr	   */
+/*   Created: 2026/02/21 17:46:37 by yelallam		  #+#	#+#			 */
+/*   Updated: 2026/02/24 11:06:18 by yelallam         ###   ########.fr       */
 /*																			*/
 /* ************************************************************************** */
 #include "push_swap.h"
 
-void	ft_lstadd_front(t_stack **head, t_stack *new_node)
+int	ft_check_dup(t_stack *head, int data)
 {
-	new_node -> next = *head;
-	*head = new_node;
+	while (head)
+	{
+		if (head -> data == data)
+			return (1);
+		head = head -> next;
+	}
+	return (0);
 }

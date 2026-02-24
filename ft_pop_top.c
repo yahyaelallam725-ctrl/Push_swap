@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*																			*/
 /*														:::	  ::::::::   */
-/*   ft_lstadd_front.c								  :+:	  :+:	:+:   */
+/*   ft_pop_top.c                                       :+:      :+:    :+:   */
 /*													+:+ +:+		 +:+	 */
 /*   By: yelallam <marvin@42.fr>					+#+  +:+	   +#+		*/
 /*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2026/02/17 13:22:34 by yelallam		  #+#	#+#			 */
-/*   Updated: 2026/02/17 13:22:38 by yelallam		 ###   ########.fr	   */
+/*   Created: 2026/02/17 13:26:55 by yelallam		  #+#	#+#			 */
+/*   Updated: 2026/02/24 10:51:51 by yelallam         ###   ########.fr       */
 /*																			*/
 /* ************************************************************************** */
 #include "push_swap.h"
 
-void	ft_lstadd_front(t_stack **head, t_stack *new_node)
+t_stack	*ft_pop_top(t_stack **head)
 {
-	new_node -> next = *head;
-	*head = new_node;
+	t_stack	*copy;
+
+	if (*head == NULL)
+		return (NULL);
+	copy = *head;
+	*head = (*head)->next;
+	copy -> next = NULL;
+	return (copy);
 }
